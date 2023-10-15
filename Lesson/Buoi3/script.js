@@ -20,3 +20,12 @@ const motor3 = {
 }
 
 const listMotors = [motor1, motor2, motor3]
+
+const container = document.getElementById("container")
+
+listMotors.forEach(function(item, index) {
+    const divTag = document.createElement("div");
+    divTag.innerText = item.name;
+
+    container.appendChild(divTag)
+})
